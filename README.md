@@ -1,140 +1,105 @@
-IPC Visualization Tool
+☕ Coffee Shop Sales Data Analysis
 
-An interactive web-based tool designed to visually demonstrate how different Inter-Process Communication (IPC) mechanisms work between processes. This project helps students, beginners, and OS learners understand how data is transferred using techniques such as Named Pipes, Message Queues, and Shared Memory.
+A Python Data Analytics Project using Pandas, NumPy & Matplotlib
 
-This visualization uses HTML5 Canvas animations and JavaScript logic to simulate real-time message passing between processes in a simple and intuitive interface.
+This project focuses on exploring, analyzing, and visualizing Coffee Shop Sales data to uncover meaningful insights about customer purchasing behavior, price variability, sales trends, and store performance. The analysis is performed using Python and various data science libraries, following multiple structured objectives to extract actionable insights from the dataset.
 
-🚀 Features
+📌 Project Objectives
 
-Visual simulation of three IPC mechanisms:
+This project includes the following analytical objectives:
 
-Named Pipe
+Compute key statistics such as mean, median, and mode for sales data.
 
-Message Queue
+Calculate standard deviation of unit prices, total revenue, and average daily revenue per store.
 
-Shared Memory
+Analyze the relationship between price and quantity purchased using correlation.
 
-Smooth animation of data packets traveling between processes.
+Identify minimum, maximum, and average quantities sold across stores.
 
-User-controlled:
+Detect outliers in unit price and transaction quantity using the IQR method.
 
-Source and target process selection
+Plot daily revenue trends to identify peaks and patterns.
 
-Message input
+Evaluate hourly sales performance using bar charts.
 
-IPC type switching
+Visualize price distribution using histogram + KDE curve.
 
-Start, Stop, and Reset actions
+Analyze impact of unit price on quantity sold using scatter plots.
 
-Real-time event log displaying message send/receive events.
+Compare monthly revenue to understand seasonal trends.
 
-Clean, modern UI with gradient background and responsive controls.
+🗂️ Dataset
 
-Canvas-based drawing for processes, connections, and data packets.
+Coffee Shop Sales dataset from Maven Analytics
+Dataset link:
+https://app.mavenanalytics.io/datasets?search=coffee+shop+sales
 
-🛠️ Tech Stack
+🛠️ Technologies & Libraries Used
 
-HTML5 – Structure and Canvas element for visualization
+Python
 
-CSS3 – Gradients, UI styling, animations, layout formatting
+Pandas – Data cleaning & analysis
 
-JavaScript (Vanilla JS) – Core logic for:
+NumPy – Numerical operations
 
-Drawing processes and connections
+Matplotlib / Seaborn – Data visualization
 
-Animating packet movement
+Jupyter Notebook – Implementation and reporting
 
-Managing IPC types
+📊 Key Insights Generated
 
-Logging events
+Summary statistics revealed central tendencies and pricing behavior.
 
-Handling user interactions
+Standard deviation and revenue metrics highlighted store-level performance differences.
 
-Files used in the project:
+Correlation analysis showed how price influences purchasing behavior.
 
-index.html – App layout and UI controls 
+IQR method identified anomalous transactions, useful for data quality checks.
 
-index
+Daily, monthly, and hourly visualizations revealed sales patterns and seasonal trends.
 
-script.js – Simulation logic, animation, IPC behavior 
+Scatter and distribution plots helped understand pricing impact and customer demand.
 
-script
-
-styles.css – Modern styling and visual enhancements 
-
-styles
-
-📂 Project Structure
-📁 ipc-visualization-tool
+📁 Project Structure
+📦 Coffee-Shop-Sales-Analysis
 │
-├── index.html
-├── styles.css
-└── script.js
+├── Coffee Shop Sales.xlsx
+├── Coffee Sales Project.ipynb
+├── README.md
+└── Report (INT-375).docx   ← Project report source :contentReference[oaicite:1]{index=1}
 
 ▶️ How to Run the Project
 
-Download or clone the repository:
+Install required Python libraries:
 
-git clone https://github.com/your-username/ipc-visualization-tool.git
+pip install pandas numpy matplotlib seaborn
 
 
-Open index.html in any modern browser:
+Open the Jupyter Notebook:
 
-Chrome
+jupyter notebook "Coffee Sales Project.ipynb"
 
-Edge
 
-Firefox
+Run all cells to view:
 
-Start the simulation by:
+Calculations
 
-Selecting IPC type
+Insights
 
-Choosing source & target process
+Charts
 
-Entering a message
+Outlier detection
 
-Clicking Send Message
+Data visualizations
 
-No installation or backend setup required.
+🧾 Project Outcome
 
-📸 Screenshots
+This project provides a complete analytical overview of Coffee Shop Sales, enabling:
 
-(Add images here after pushing to GitHub)
+Better understanding of customer behavior
 
-/screenshots/home.png  
-/screenshots/pipe.png  
-/screenshots/message-queue.png  
-/screenshots/shared-memory.png
+Insights into price sensitivity
 
-📘 Use Cases
+Evaluation of store performance
 
-Operating Systems academic projects
-
-Lab assignments for IPC mechanisms
-
-Teaching tool for OS communication concepts
-
-Visualization for distributed systems basics
-
-📌 Future Enhancements
-
-Add more IPC mechanisms (Sockets, Semaphores)
-
-Multi-process simulation (more than 2 processes)
-
-Different message packet shapes/speeds
-
-Dark mode UI
-
-Step-by-step mode for teaching
-
-👨‍💻 Author
-
-Munnaluri Maadhava
-B.Tech CSE
-Lovely Professional University
-
-📄 License
-
-This project is open-source and available under the MIT License.
+Clear visual trends for business decision-making
